@@ -1,0 +1,144 @@
+<html>
+
+  <head>
+    <title>Welcome</title>
+    <link rel="stylesheet" type="text/css" href="style.css"/>
+   
+    <meta charset="UTF-8">
+ 
+    <script src="https://www.gstatic.com/firebasejs/8.2.7/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.2.7/firebase-auth.js"></script>
+  <script src="form.js" ></script>
+  </head>
+<body>
+   <div class="header">
+    <div class="wrapper">
+      <img src="images/download.png"class="logoletter"/>
+      
+      
+      
+
+      <!-- <form action="new.html" class="loginuser">
+        
+        <table id="login">
+          <tr style="height: 20px">
+            <td><label for="email">Email</label> </td>
+            <td><label for="password">Password</label></td>
+            <td rowspan=3><button type="submit" id="loginbutton" onclick="signUp()">Log In</button></td>
+          </tr>
+          
+          <tr>
+            <td><input type="email" id="email" class="inputtext" required/></td>
+            <td><input type="password" id="password" class="inputtext" required/></td>
+          </tr>
+        </table>
+
+      </form> -->
+        <!-- ORIGINAL LOG IN -->
+        <!-- <form action="new.html" class="loginuser">
+          <table id="login">
+            <tr style="height: 20px">
+              <td><label for="email">Email</label> </td>
+              <td><label for="password">Password</label></td>
+              <td rowspan=3> <button  type="submit" id="button" onclick="signIn()" >Log in</button></td>
+            </tr>
+
+
+            <tr>
+            <td>  <input type="email"  id="email" class="inputtext"  required >           </td>
+            <td>   <input type="password" id="password" class="inputtext" pattern=".{8,}"   required title="8 characters minimum" > </td>
+            
+
+            </tr>   
+          </table>
+
+      </form> -->
+
+    </div>
+
+  </div> 
+
+  <form id="signuptable" action="new.html">
+   <div class="main">
+    <div class="wrapper">
+      <img src="https://cdn.dribbble.com/users/1518535/screenshots/7528356/media/e11e5b8aaa2187e4e1a7c3da0553208e.gif" class="logopic"/>
+
+     <div class="signup">
+      <h2>Join Online Coding Club Today!</h2>
+
+      
+          <table >
+          <tr>
+            <td><label for="fname">First Name:</label></td>
+            <td><input type="firstname" id="fname" class="inputtext2" name="fname" required/></td>
+          </tr>
+
+          <tr>
+            <td><label for="lname">Last Name:</label></td>
+            <td><input type="lastname" id="lname" class="inputtext2" name="lname" required/></td>
+          </tr>
+
+          <tr>
+            <td><label for="email"> Email:</label></td>
+            <td><input type="email"  id="email" class="inputtext2"  required name="emailid" required/></td>
+          </tr>
+
+          <tr>
+            <td><label for="password">Password:</label></td>
+            <td><input  type="password" id="password" class="inputtext2" pattern=".{6,}"   required title="6 characters minimum"  class="inputtext2" name="pwd" required/></td>
+          </tr>
+          <tr>
+            <td><label for="lname">Phone No.</label></td>
+            <td><input type="number" id="pn" class="inputtext2" name="pn" required pattern=".{10,}"  title="10 digits minimum"/></td>
+          </tr>
+          
+          <tr>
+            <td><label for="lname">College Name</label> </td>
+            <td><input type="collegename" id="cname" class="inputtext2" name="lname" required/></td>
+          </tr>
+          
+          <tr id="joinbut">
+            <td colspan=2 style="padding-left:40px;padding-right: 0px"><button  class="joinnowbttn" type="submit"  type="submit"  onclick="signUp()" >JOIN NOW</button></td>
+         
+          </tr>
+
+          </table>
+      
+         </div>
+       </div>
+     </div>
+    </form>
+  <div  style="margin-left: 10cm;">
+    <h5 >Copyright @2022 Jaihind Coding Club</h5>
+  </div>  
+    
+
+<!-- 
+
+  <form action="new.html" class="loginuser">
+    <table id="login">
+      <tr style="height: 20px">
+        <td><label for="Remail">Email</label> </td>
+        <td><label for="Rpwd">Password</label></td>
+        <td rowspan=3> <button  type="submit" id="button" onclick="signUp()" >Log in</button></td>
+      </tr>
+
+
+      <tr>
+      <td>  <input type="email"  id="Remail" class="inputtext"  required >           </td>
+      <td>   <input type="password" id="Rpwd" class="inputtext" pattern=".{8,}"   required title="8 characters minimum" > </td>
+      
+
+      </tr>   
+    </table>
+
+</form>
+ -->
+
+
+
+
+
+    
+</body>
+</html>

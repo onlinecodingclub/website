@@ -1,0 +1,477 @@
+<html>
+<head>
+<title>QnA Section</title>
+</head>
+<link href="new.css" type="text/css" rel="stylesheet" />
+<link href="feed.css" type="text/css" rel="stylesheet" />
+<!-- Bootstrap CSS -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+ integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+
+
+
+<!-- CSS and JavaScript references -->
+<link rel="stylesheet" type="text/css" href="header.css">
+<link rel="stylesheet" type="text/css" href="home.css">
+<link rel="stylesheet" type="text/css" href="fonts/font-awesome/css/font-awesome.min.css">
+<script src="header.js"></script>
+<script src="home.js"></script>
+<!-- Ending of CSS and JavaScrit -->
+
+
+
+
+
+
+
+
+
+<!-- Internal CSS -->
+<style>
+header img{
+float:left;
+}
+
+header h1{
+margin:0px;
+float:center;
+}
+.p1{
+width:340px;
+height:300px;
+border:1px solid black;
+float:left;
+margin:5px 5px 5px 10px;
+}
+</style>
+<body>
+<div class="id">
+<div class="header">
+<header>
+  <a href="new.html">
+    <img src="images/download.png" width="150px" ></a>
+    <h1  class="display-2" style="font-size: 23mm; font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif"><b>&nbsp;Online Coding Club</b></h1></font>
+
+
+</header>
+</div>
+
+<div class="list"> 
+<table width="1080" border="1" border-color="white" cellspacing="0" cellpadding="0">
+      <tr>
+	  <!-- Using tr and td with href in table as Navigation bar -->
+        <td width="196" height="40" align="center" bgcolor="FF3300"><span class="style7"><a href="new.html"><font color="#FFFFFF">Home</font></a></span></td>
+        <td width="196" height="40" align="center" bgcolor="FF3300"><span class="style7"><a href="about.html"><font color="#FFFFFF">About Us</font></a></span></td>
+        <td width="196" height="40" align="center" bgcolor="FF3300"><span class="style7"><a href="services.html"><font color="#FFFFFF">Explore!</font></a></span></td>
+        <td width="196" height="40" align="center" bgcolor="FF3300"><span class="style7"><a href="gallery.html"><font color="#FFFFFF">Feed</font></a></span></td>
+        <td width="196" height="40" align="center" bgcolor="FF3300"><span class="style7"><a href="contact.html"><font color="#ffffff">Contact Us</font></a></span></td>
+        <td width="196" height="40" align="center" bgcolor="FF3300"><span class="style7"><a href="index.html"><font color="#ffffff">Logout</font></a></span></td>
+      </tr>
+    </table>
+</div>
+
+   
+
+
+
+	<!-- Content Section -->
+	<div class="content">
+		<!-- Start wrapper -->
+		<div class="wrapper">
+
+			<!-- Start Left section -->
+			<div class="leftfixed">
+				<!-- start sidebar left -->
+				<div class="sidebarleft">
+					<img src="img2/upload.png"/>
+                    <br><br>
+					<p id="sidename"> Siddhesh ButtePatil</p>
+
+                 
+				
+					
+					<p id="logout"><a href="index.html">Log Out</a></p>
+				</div>
+				<!-- End of sidebar left -->
+			</div>
+			<!-- End of leftfixed -->
+
+			<!-- start of main content section -->
+			<div class="mainnotfixed" id="mainnotfixed">
+				<!-- Start of post an content -->
+				<div class="main mainpost" style="margin-bottom:20px; padding-bottom:10px;">	
+
+					<div class="userimg"><img src="img2/upload.png"/>
+						</div>
+					    <div class="username">				 <p class="name" style="top:15px;">Siddhesh ButtePatil</p>
+					    </div>
+						<p class="quotes">
+							<textarea id="mypara" placeholder="Share an article ,photo ,video or idea."></textarea>
+						</p>
+						<!-- image load to post -->
+						<div class="post">
+							<img id="load2" class="postimg" src=" "/>
+						</div>
+
+						<div class="postbar">
+							<input type="file" accept="images/*" id="chooseimg" onchange="loadFile(event)" onmouseover="onbuttoncolor()" onmouseout="outbuttoncolor()"/>
+							<button type="button" class="imgbttn" id="imgbttn">&#x1f4f7; Images</button>
+							<button type="button" id="postmypost" class="postmypost" onclick="mypost();">Post</button>
+						</div>
+
+				</div>
+				<!-- End of post an content -->
+				<hr>
+
+				<!-- posted content view -->
+				<div class="allpost">
+					<!-- post 1 by creator-->
+					<div class="mainpost">
+						<div class="userimg"><img src="img2/upload.png"/>
+						</div>
+					    <div class="username">				 <p class="name">Soham Kabadi</p>
+					    </div>
+						<p class="time">2min ago</p>
+						<p class="quotes">
+							Welcome to our society. You will be judged on what you wear, which music you listen to, what you look like, how you act, who you hang around with, and on practically every other personal trait and imperfection about you, and you'll be made fun of for being who you are. Enjoy your stay.
+						</p>
+						<div class="post">
+							<img class="postimg" src="img2\aboutus.webp"/>
+						</div>
+
+						<div class="likedislike">
+							<p class="like">
+								<span class="nooflike" id="like1">0 </span> likes &nbsp <span class="noofdislike" id="dislike1">0 </span> dislikes
+							</p>
+							<p class="likedisbttn">
+								<span id="thumbsup1" class="fa fa-thumbs-up" onclick="increase('like1','dislike1','thumbsup1','thumbsdown1');"></span> <span id="thumbsdown1" class="fa fa-thumbs-down" onclick="decrease('like1','dislike1','thumbsup1','thumbsdown1');"></span>
+							</p>
+						</div>
+
+					</div>
+					<!-- end of post 1 by creator -->
+
+					<!-- post 2 by creator -->
+					<div class="mainpost">
+						<div class="userimg"><img src="img2/upload.png"/>
+						</div>
+					    <div class="username">				 <p class="name">Saurabh Batwal</p>
+					    </div>
+						<p class="time">8min ago</p>
+						<p class="quotes">
+							A gender-equal society would be one where the word 'gender' does not exist: where everyone can be themselves.
+						</p>
+						<div class="post">
+							<img class="postimg" src="img2\cvr2.png"/>
+						</div>
+
+						<div class="likedislike">
+							<p class="like">
+								<span class="nooflike" id="like2">0 </span> likes &nbsp <span class="noofdislike" id="dislike2">0 </span> dislikes
+							</p>
+							<p class="likedisbttn">
+								<span id="thumbsup2" class="fa fa-thumbs-up" onclick="increase('like2','dislike2','thumbsup2','thumbsdown2');"></span> <span id="thumbsdown2" class="fa fa-thumbs-down" onclick="decrease('like2','dislike2','thumbsup2','thumbsdown2');"></span>
+							</p>
+						</div>
+
+					</div>
+					<!-- end of post 2 by creator -->
+
+
+				</div>
+				<!-- end of posted content view -->
+
+				<!-- button to view more previous post -->
+				<button type="button" id="viewmore" class="viewmore" onclick="newpost();">View More</button>
+			</div>
+			<!-- End of main content section -->
+
+
+
+
+			
+
+		</div>
+		<!-- End of wrapper -->
+
+	</div>
+	<!-- End of content section -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- ORIGINAL POST SECTION -->
+
+    <!-- <nav class="navbar navbar-light bg-red  ">
+        <a href="#" class="navbar-brand">//anything here</a>
+        <form class="form-inline">
+            <div class="input-group">
+                <input type="text" class="form-control" aria-label="Recipient's username" aria-describedby="button-addon2">
+                <div class="input-group-append">
+                    <button class="btn btn-outline-primary" type="button" id="button-addon2">
+                        <i class="fa fa-search"></i>
+                    </button>
+                </div>
+            </div>
+        </form>
+    </nav> -->
+
+
+    <!-- <div class="container-fluid gedf-wrapper">
+        <div class="row">
+            <div class="col-md-3">
+                <div class="card">
+                    <div class="card-body">
+                        <div class="h5">@username_here</div>
+                        <div class="h7 text-muted">Fullname : Lorem Ipsum</div>
+                        <div class="h7">Student of CSE at Jaihind Polytechinc, Kuran
+                        </div>
+                    </div>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item">
+                            <div class="h6 text-muted">Followers</div>
+                            <div class="h5">169</div>
+                        </li>
+                        <li class="list-group-item">
+                            <div class="h6 text-muted">Following</div>
+                            <div class="h5">153</div>
+                        </li>
+                        <li class="list-group-item"><h6>Intrests:</h6> Javascript, Angular, Python</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="col-md-6 gedf-main">
+
+
+
+            
+                <div class="card gedf-card">
+                    <div class="card-header">
+                        <ul class="nav nav-tabs card-header-tabs" id="myTab" role="tablist">
+                            <li class="nav-item">
+                                <a class="nav-link active" id="posts-tab" data-toggle="tab" href="#posts" role="tab" aria-controls="posts" aria-selected="true">Publish Something Here</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" id="images-tab" data-toggle="tab" role="tab" aria-controls="images" aria-selected="false" href="#images">Add Image</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="card-body">
+                        <div class="tab-content" id="myTabContent">
+                            <div class="tab-pane fade show active" id="posts" role="tabpanel" aria-labelledby="posts-tab">
+                                <div class="form-group">
+                                    <label class="sr-only" for="message">post</label>
+                                    <textarea class="form-control" id="message" rows="3" placeholder="What are you thinking?"></textarea>
+                                </div>
+
+                            </div>
+                            <div class="tab-pane fade" id="images" role="tabpanel" aria-labelledby="images-tab">
+                                <div class="form-group">
+                                    <div class="custom-file">
+                                        <input type="file" class="custom-file-input" id="customFile">
+                                        <label class="custom-file-label" for="customFile">Upload image</label>
+                                    </div>
+                                </div>
+                                <div class="py-4"></div>
+                            </div>
+                        </div>
+                        <div class="btn-toolbar justify-content-between">
+                            <div class="btn-group">
+                                <button type="submit" class="btn btn-primary">share</button>
+                            </div>
+                           
+                        </div>
+                    </div>
+                </div>
+               
+
+                <div class="card gedf-card">
+                    <div class="card-header">
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div class="mr-2">
+                                    <img class="rounded-circle" width="45" src="https://picsum.photos/50/50" alt="">
+                                </div>
+                                <div class="ml-2">
+                                    <div class="h5 m-0">@Siddh1232  <span class="badge badge-primary">Admin</span></div>
+                                    <div class="h7 text-muted">Siddhesh S. ButtePatil</div>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="dropdown">
+                                    <button class="btn btn-link dropdown-toggle" type="button" id="gedf-drop1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        <i class="fa fa-ellipsis-h"></i>
+                                    </button>
+                                    <div class="dropdown-menu dropdown-menu-right" aria-labelledby="gedf-drop1">
+                                        <div class="h6 dropdown-header">Configuration</div>
+                                        <a class="dropdown-item" href="#">Save</a>
+                                        <a class="dropdown-item" href="#">Hide</a>
+                                        <a class="dropdown-item" href="#">Report</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="card-body">
+                        <div class="text-muted h7 mb-2"> <i class="fa fa-clock-o"></i>10 min ago</div>
+                       
+                        <p class="card-text">
+                          Web development roadmap: <br>
+
+                          HTML → CSS → CSS frameworks → JavaScript → DOM → Git and GitHub → React/Angular/Vue → Node.js → API → Database → Web3.js → Solidity
+                        </p>
+                    </div>
+                    <div class="card-footer">
+                        <a href="#" class="card-link"><i class="fa fa-gittip"></i> Like</a>
+                        <a href="#" class="card-link"><i class="fa fa-comment"></i> Comment</a>
+                        <a href="#" class="card-link"><i class="fa fa-mail-forward"></i> Share</a>
+                    </div>
+                </div>
+             
+
+
+                <div class="card gedf-card">
+                    <div class="card-header">
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div class="mr-2">
+                                    <img class="rounded-circle" width="45" src="https://picsum.photos/50/50" alt="">
+                                </div>
+                                <div class="ml-2">
+                                    <div class="h5 m-0">@100rbh <span class="badge badge-primary">Teacher</span></div>
+                                    
+                                    <div class="h7 text-muted">Saurabh Y. Batwal</div>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="dropdown">
+                                    <button class="btn btn-link dropdown-toggle" type="button" id="gedf-drop1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        <i class="fa fa-ellipsis-h"></i>
+                                    </button>
+                                    <div class="dropdown-menu dropdown-menu-right" aria-labelledby="gedf-drop1">
+                                        <div class="h6 dropdown-header">Configuration</div>
+                                        <a class="dropdown-item" href="#">Save</a>
+                                        <a class="dropdown-item" href="#">Hide</a>
+                                        <a class="dropdown-item" href="#">Report</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="card-body">
+                        <div class="text-muted h7 mb-2"> <i class="fa fa-clock-o"></i> 4 hours ago</div>
+                        
+                        <p class="card-text">
+                          I found a great website. ⚡<br>
+
+                          It injects CSS into the page which you can visualize in real time.
+                          
+                          This website is made using 
+                          @Replit
+                          .
+                          
+                          🔗<a class="card-link" href="https://its.rayhanadev.repl.co"> https://its.rayhanadev.repl.co</a></p>
+                       
+                    </div>
+                    <div class="card-footer">
+                        <a href="#" class="card-link"><i class="fa fa-gittip"></i> Like</a>
+                        <a href="#" class="card-link"><i class="fa fa-comment"></i> Comment</a>
+                        <a href="#" class="card-link"><i class="fa fa-mail-forward"></i> Share</a>
+                    </div>
+                </div>
+               
+
+
+                <div class="card gedf-card">
+                    <div class="card-header">
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div class="mr-2">
+                                    <img class="rounded-circle" width="45" src="https://picsum.photos/50/50" alt="">
+                                </div>
+                                <div class="ml-2">
+                                    <div class="h5 m-0">@100hm<span class="badge badge-primary">Student</span></div>
+                                    <div class="h7 text-muted">Soham D. Kabadi</div>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="dropdown">
+                                    <button class="btn btn-link dropdown-toggle" type="button" id="gedf-drop1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        <i class="fa fa-ellipsis-h"></i>
+                                    </button>
+                                    <div class="dropdown-menu dropdown-menu-right" aria-labelledby="gedf-drop1">
+                                        <div class="h6 dropdown-header">Configuration</div>
+                                        <a class="dropdown-item" href="#">Save</a>
+                                        <a class="dropdown-item" href="#">Hide</a>
+                                        <a class="dropdown-item" href="#">Report</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="card-body">
+                        <div class="text-muted h7 mb-2"> <i class="fa fa-clock-o"></i>2 days ago</div>
+                        
+
+                        <p class="card-text">
+                          Replit is organizing a new Hackathon. 🚨<br>
+
+                          Make sure to sbmit your project becuase it's you chance to sharpen your coding skills.<br>
+                          
+                          🗓️ May 23 - May 30, 2022<br>
+                          
+                            <a href="https://hopin.com/events/made-with-replit/registration" target="_blank">https://hopin.com/events/made-with-replit/registration</a>
+                        </p>
+                    </div>
+                    <div class="card-footer">
+                        <a href="#" class="card-link"><i class="fa fa-gittip"></i> Like</a>
+                        <a href="#" class="card-link"><i class="fa fa-comment"></i> Comment</a>
+                        <a href="#" class="card-link"><i class="fa fa-mail-forward"></i> Share</a>
+                    </div>
+                </div>
+               
+
+
+
+            </div>
+           
+        </div>
+    </div>
+    <br> --> 
+
+
+
+</div>           
+</div>
+<!-- JavaScript used in the recent page are listed below. Script is used for it -->
+<script src="slide.js" ></script>
+<script src="footer.js" ></script>
+</body>
+</html>
